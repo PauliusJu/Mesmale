@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Blogas</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .blog-post {
+            margin: 20px;
+            max-width: 600px;
+            float: center;
+            padding: 10px;
+        }
+
+        .blog-post img {
+            width: 100%;
+            border-radius: 10px;
+            display: flex;
+        }
+
+        .overlay {
+            top: 20px;
+            left: 20px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .overlay h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .overlay p {
+            margin: 5px 0 0;
+            font-size: 14px;
+        }
+
+        .container {
+            display: flex;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div class="blog-post">
+                <img src="img_1.jpg.webp" alt="Blogo įrašas1">
+                <div class="overlay">
+                    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                    <p>Data: 2024-10-28</p>
+                </div>
+            </div>
+            <div class="blog-post">
+                <img src="img_2.jpg.webp" alt="Blogo įrašas 2">
+                <div class="overlay">
+                    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                    <p>Data: 2024-10-28</p>
+                </div>
+            </div>
+        </div>
+        <div class="blog-post">
+            <img src="img_v_1.jpg.webp" alt="Blogo įrašas 3">
+            <div class="overlay">
+                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                <p>Data: 2024-10-28</p>
+            </div>
+        </div>
+        <div>
+            <div class="blog-post">
+                <img src="img_3.jpg.webp" alt="Blogo įrašas 4">
+                <div class="overlay">
+                    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                    <p>Data: 2024-10-28</p>
+                </div>
+            </div>
+            <div class="blog-post">
+                <img src="img_4.jpg.webp" alt="Blogo įrašas 4">
+                <div class="overlay">
+                    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                    <p>Data: 2024-10-28</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

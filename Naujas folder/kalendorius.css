@@ -1,0 +1,14 @@
+.week{
+    background-color: rgb(201, 194, 194);
+}
+
+.weekend{
+    color:gray;
+}
+table{
+    text-align: center;
+    display: inline-table;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 200px;
+    }

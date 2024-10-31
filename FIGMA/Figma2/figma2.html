@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+
+
+        }
+
+        body {
+            margin: 0;
+            font-family: "Poppins", serif;
+            margin-top: 150px;
+        }
+
+        .sign-in {
+            max-width: 1440px;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .left-box {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .sign-in .left-box img {}
+
+        .right-box {
+            background-color: #1C4532;
+            display: flex;
+            width: 1440px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        .sign-in .left-box span {
+            color: rgb(8, 74, 8);
+            text-decoration: underline;
+        }
+
+        .line {
+            width: 150px;
+            height: 0;
+            border: 1px solid #C4C4C4;
+            display: inline-block;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .prisijungti {
+            background-color: #1C4532;
+            text-decoration: none;
+            color: white;
+            display: block;
+            width: 528px;
+            font-size: 20px;
+            border-radius: 30px;
+            border: none;
+            padding: 10px;
+            margin-top: 23px;
+        }
+
+        .google {
+            background-color: white;
+            text-decoration: none;
+            color: black;
+            display: block;
+            width: 528px;
+            font-size: 20px;
+            border-radius: 30px;
+            border: 1px solid grey;
+            padding: 10px;
+            margin-top: 23px;
+            background: url(Rectangle.svg) no-repeat 26px center;
+
+        }
+
+        .facebook {
+            background-color: white;
+            text-decoration: none;
+            color: black;
+            display: block;
+            width: 528px;
+            font-size: 20px;
+            border-radius: 30px;
+            border: 1px solid grey;
+            padding: 10px;
+            margin-top: 20px;
+            background: url(Rectangle\(1\).svg) no-repeat 26px center;
+        }
+
+
+        .papildymas {
+            text-align: center;
+        }
+
+        .langelis {
+            justify-content: center;
+            display: flex;
+        }
+
+        .prisiminti {
+            margin-top: 16px;
+            margin-right: 235px;
+        }
+
+        .sign-in form .input-holder {
+            margin-bottom: 16px;
+        }
+
+        .sign-in form input {
+            width: 100%;
+            border: 1px solid grey;
+            border-radius: 30px;
+            height: 45px;
+            padding-left: 15px;
+        }
+
+        .right-box::before {
+            content: "";
+            width: 557px;
+            height: 557px;
+            border: 1px solid white;
+            border-radius: 50%;
+            background: linear-gradient(210deg, rgba(247, 250, 252, 1) 0%, rgba(237, 242, 247, 0) 80%);
+            position: absolute;
+            top: -50px;
+            right: -100px;
+        }
+
+        .right-box .container {
+            text-align: center;
+
+        }
+
+        .box1 {
+            margin-top: -65px;
+            text-align: center;
+            margin-left: 300px;
+        }
+
+        .support {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+
+        .tekstas h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            color: white;
+
+        }
+
+        .tekstas p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sign-in">
+        <div class="left-box">
+            <div class="left-wrapper">
+                <img src="logo.svg" alt="Logo">
+                <h1>Sign In</h1>
+                <p>Don’t have an account? <span>Create now</span></p>
+                <form>
+                    <div class="input-holder">
+                        <p>Email</p>
+                        <input type="text" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="input-holder">
+                        <p>Password</p>
+                        <input type="password" placeholder="@#$%^" class="icon-lock">
+                    </div>
+                    <div class="langelis">
+                        <input id="show" type="checkbox" style="width: 20px">
+                        <label for="show" class="prisiminti">Remember me</label>
+                        <p><span> Forgot Password?</span></p>
+                    </div>
+                    <button type="submit" class="prisijungti">Sign in</button>
+
+                    <div class="papildymas">
+                        <div class="line wrapper"></div>
+                        <div style="display:inline-block;">OR</div>
+                        <div class="line"></div>
+                    </div>
+                    <button type="button" class="google">Continue with Google</button>
+                    <button type="button" class="facebook">Continue with Facebook</button>
+                </form>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="support">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="apple"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+                    <path
+                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+                </svg>
+                <p>Support</p>
+            </div>
+            <div class="container">
+                <img src="Large_CTA Content.svg" alt="Logo">
+                <div class="box1">
+                    <img src="Small_Earnings.svg" alt="Logo">
+                </div>
+                <div class="tekstas">
+                    <h1 style="color: white;">Introducing new feature</h1>
+                </div>
+                <div class="tekstas1">
+                    <p style="color: white;">Analyzing previous trends ensures that businesses always make the right
+                        decision. And as the scale of the decision and it's impact magnifies...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

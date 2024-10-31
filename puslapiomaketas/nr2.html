@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Visų elementų selektorius: */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Rubik", sans-serif;
+            min-height: 100vh;
+            /* Reset */
+            margin: 0;
+            background-color: #ccc1bd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .topgame {
+            display: flex;
+            width: 800px;
+            /* margin: 0 auto; */
+            gap: 15px;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        .topblock {
+            width: 100px;
+            height: 34px;
+            background-color: #bdac97;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: 450;
+            /* Norint išlygiuoti tekstą blokelyje: */
+            /* text-align: center;
+            line-height: 100px; */
+            line-height: 35px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        .bottomgame {
+            display: flex;
+            flex-wrap: wrap;
+            width: 800px;
+            /* margin: 0 auto; */
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .bottomblock {
+            width: 181px;
+            height: 230px;
+            background-color: #bdac97;
+            font-size: 14x;
+            font-weight: 700;
+            /* Norint išlygiuoti tekstą blokelyje: */
+            /* text-align: center;
+            line-height: 100px; */
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="topgame">
+            <div class="topblock">Show all</div>
+            <div class="topblock">Nature</div>
+            <div class="topblock">Cars</div>
+            <div class="topblock">People</div>
+
+        </div>
+        <div class="bottomgame">
+            <div class="bottomblock">
+                <img src="juoda.webp" alt="" width="181" height="130">
+                <h4>Black Jaguar</h4>
+                <p>Lore ipsum dolor..</p>
+            </div>
+            <div class="bottomblock">
+                <div class="bottomblock">
+                    <img src="liutukas.webp" alt="" width="181" height="130">
+                    <h4>Lion</h4>
+                    <p>Lore ipsum dolor..</p>
+                </div>
+            </div>
+            <div class="bottomblock"><img src="marga.webp" alt="" width="181" height="130">
+                <h4>Jaguar</h4>
+                <p>Lore ipsum dolor..</p>
+            </div>
+            <div class="bottomblock"><img src="ratas.jpg" alt="" width="181" height="130">
+                <h4>Pink Ball</h4>
+                <p>Lore ipsum dolor..</p>
+            </div>
+            <div class="bottomblock"><img src="medis.jpg" alt="" width="181" height="130">
+                <h4>Tree</h4>
+                <p>Lore ipsum dolor..</p>
+            </div>
+            <div class="bottomblock"><img src="mountains.webp" alt="" width="181" height="130">
+                <h4>Mountains</h4>
+                <p>Lore ipsum dolor..</p>
+            </div>
+            <div class="bottomblock"><img src="liutukas.webp" alt="" width="181" height="130">
+                <h4>Lion</h4>
+                <p>Lore ipsum dolor..</p>
+            </div>
+            <div class="bottomblock"><img src="mountains.webp" alt="" width="181" height="130">
+                <h4>Mountains</h4>
+                <p>Lore ipsum dolor</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

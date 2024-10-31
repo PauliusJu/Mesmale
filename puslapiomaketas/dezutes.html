@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #192123;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #div1, #div2, #div3 {
+            background-color: #b4e900;
+            width: 100px; /* Plotis */
+            height: 30px; /* Aukštis*/
+            display: flex;
+            justify-content: flex-start; /* Align to left */
+            align-items: flex-end; /* Align to bottom */
+            color: #192123; /* Number color */
+            font-weight: bold; /* Bold text */
+            padding: 5px; /* Space from edges */
+        }
+
+        #div2 {
+            background-color: #4f595c;
+        }
+
+        #div3 {
+            background-color: #4b5659;
+        }
+
+        .big-boxes {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px; /* Space above big boxes */
+        }
+
+        .small-boxes {
+            display: flex;
+            justify-content: center; /* Center small boxes */
+            gap: 30px; /* Gap between small boxes */
+            margin-top: 20px; /* Space between big and small boxes */
+        }
+
+        .box {
+            height: 150px;
+            width: 150px;
+            background-color: #4b5659;
+            display: flex;
+            justify-content: flex-start; /* Align to left */
+            align-items: flex-end; /* Align to bottom */
+            color: #192123; /* Number color */
+            font-weight: bold; /* Bold text */
+            padding: 10px; /* Space from edges */
+        }
+
+        .active {
+            background-color: #b4e900;
+        }
+    </style>
+    <title>Box Layout</title>
+</head>
+
+<body>
+    <div class="big-boxes">
+        <div class="box active">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    <div class="small-boxes">
+        <div id="div1">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+    </div>
+</body>
+
+</html>

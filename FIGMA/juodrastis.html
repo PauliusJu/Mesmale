@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            font-family: "Poppins", serif;
+            overflow: hidden;
+        }
+        .left-box {
+            background: linear-gradient(to bottom, #0575E6 0, #02298A 85%, #021B79 100%);
+            width: 60%;
+            height: 100vh;
+            display: flex;
+        }
+        .content-box {
+            position: relative;
+            width: 410px;
+            height: 147px;
+            left: 157px;
+            top: 371px;
+        }
+        .content-box::before,
+        .content-box::after {
+            content: "";
+            width: 557px;
+            height: 557px;
+            border: 1px solid #0575e6;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .content-box::before {
+            top: 450px;
+            left: -207px;
+        }
+        .content-box::after {
+            top: 550px;
+            right: -126px;
+        }
+        .title {
+            font-size: 40px;
+            font-weight: bold;
+            margin: 0;
+            margin-right: 50px;
+        }
+        .right-box {
+            background-color: #fff;
+            width: 40%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            top: -100px;
+        }
+        .description {
+            font-size: 1.2em;
+            margin: 10px 0 20px;
+            position: relative;
+        }
+        .button {
+            background-color: #0575e6;
+            border-style: none;
+            display: inline-block;
+            padding: 10px 30px;
+            border-radius: 30px;
+            color: aliceblue;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .button:hover {
+            background-color: lightgray;
+        }
+        .input-container {
+            position: relative;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .input-container i {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #0575e6;
+        }
+        .login-box input {
+            width: 100%;
+            padding: 10px 10px 10px 35px; /* extra padding for icon space */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-button {
+            background-color: #0575e6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+        .login-button:hover {
+            background-color: #055bb5;
+            border-radius: 30px;
+        }
+        .forgot-password {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #0575e6;
+            text-decoration: none;
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+        .pavadinimas {
+            margin-right: 110px;
+            margin-bottom: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-box">
+        <div class="content-box">
+            <div class="title">GoFinance</div>
+            <div class="description">The most popular peer-to-peer lending at sea</div>
+            <a href="#" class="button">Read More</a>
+        </div>
+    </div>
+    <div class="right-box">
+        <div class="title">Hello Again</div>
+        <div class="pavadinimas">
+            <h4>Welcome Back</h4>
+        </div>
+        <div class="login-box log">
+            <div class="input-container">
+                <i class="bi bi-person"></i>
+                <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="input-container">
+                <i class="bi bi-envelope"></i>
+                <input type="text" placeholder="Enter your email" required>
+            </div>
+            <div class="input-container">
+                <i class="bi bi-lock"></i>
+                <input type="password" placeholder="Enter your password" required>
+            </div>
+            <button class="login-button">Login</button>
+            <a href="#" class="forgot-password">Forgot password</a>
+        </div>
+    </div>
+</body>
+</html>

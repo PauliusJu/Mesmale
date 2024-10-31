@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.filter {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    right: 200px;
+    bottom: 200px;
+    z-index: 1;
+    opacity: .7;
+    background: rgb(122, 122, 231);
+    background: -moz-radial-gradient(circle, rgba(122, 122, 231, 1) 0%, rgba(0, 24, 255, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(122, 122, 231, 1) 0%, rgba(0, 24, 255, 1) 100%);
+    background: radial-gradient(circle, rgba(122, 122, 231, 1) 0%, rgba(0, 24, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7a7ae7", endColorstr="#0018ff", GradientType=1);
+}
+
+table {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    border-collapse:collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(32,32, 32,3);
+    background: #fafafa;
+    text-align: center;
+
+}
+
+tr,td {
+    padding: 10px 15px;
+    
+}
+tr {
+    background: grey;
+    color: #fafafa;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+td{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+tr:nth-child(odd){
+    background-color: rgb(155, 148, 148);
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    position:relative;
+    bottom: -250px;
+    vertical-align:bottom;
+}
